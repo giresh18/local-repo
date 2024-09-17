@@ -7,7 +7,7 @@ type nameprops ={
 const Greet = (props:nameprops) => {
   return (
     <div>
-      Hello {props.name}
+      Hello {props.name ? props.name : "Guest"}
     </div>
   )
 }
